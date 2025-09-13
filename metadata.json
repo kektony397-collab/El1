@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Bike Advance",
+  "description": "A comprehensive Progressive Web App for bike monitoring, fuel management, and expense tracking. It offers offline capabilities, real-time data simulation, and financial tracking to provide bike owners with a complete overview of their vehicle's performance and costs.",
+  "requestFramePermissions": []
+}

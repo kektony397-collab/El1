@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Advance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Bike Advance" />
+    <meta name="application-name" content="Bike Advance" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <!-- A manifest.json file should be created in the public folder for full PWA functionality. -->
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: 'hsl(243 90% 55%)',
+                light: 'hsl(243 90% 65%)',
+                dark: 'hsl(243 90% 45%)',
+                foreground: 'hsl(0 0% 100%)'
+              },
+              background: 'hsl(240 10% 96%)',
+              foreground: 'hsl(240 10% 3.9%)',
+              card: 'hsl(0 0% 100%)',
+              card_foreground: 'hsl(240 10% 3.9%)',
+              dark_background: 'hsl(240 10% 3.9%)',
+              dark_foreground: 'hsl(0 0% 98%)',
+              dark_card: 'hsl(240 10% 10%)',
+              dark_card_foreground: 'hsl(0 0% 98%)'
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "dexie": "https://aistudiocdn.com/dexie@^4.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background dark:bg-dark_background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
